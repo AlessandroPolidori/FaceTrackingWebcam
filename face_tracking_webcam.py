@@ -13,9 +13,9 @@ display = jetson.utils.videoOutput("display://0")     # 'my_video.mp4' for file
 window = 10
 kit = ServoKit(channels=16)
 width = 1280
-height = 720
+height = 720 #height and width could be different based on videoSource resolution
 pan =100
-tilt=140
+tilt=140 #change pan and tilt values to have a convenient webcam starting position
 kit.servo[0].angle = pan
 kit.servo[1].angle = tilt
 
